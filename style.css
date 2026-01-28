@@ -17,6 +17,8 @@ body{
     width: 100%;
     background-color: transparent;
     padding: 20px;
+    height: 70px;
+
 
     position: fixed;
     top: 0;
