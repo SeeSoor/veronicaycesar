@@ -10,7 +10,6 @@
 
     <header class="header">
         <nav class="nav">
-            <img src="assets/menu.png" alt="Menú" class="hamburger">
             <ul class="menu">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#it">Itinerario</a></li>
@@ -30,14 +29,14 @@
             <h1>Ceremonia</h1>
             <p>Parroquia El Señor de la Misericordia</p>
             <p>19:00 horas</p>
-            <button class="button1">Ubicación</button>
+            <button class="button1"><a onclick="window.location.href='https://maps.app.goo.gl/QqXkqnbuFZX4SHrK6'">Ubicación</a></button>
         </div>
         <div class="misa">
             <img src="assets/bailando.png" alt="" class="church">
             <h1>Recepción</h1>
             <p>Salón Verité</p>
             <p>20:00 horas</p>
-            <button class="button1">Ubicación</button>
+            <button class="button1"><a onclick="window.location.href='https://maps.app.goo.gl/1NGqY9HGznURC7AQ6'">Ubicación</a></button>
         </div>
     </section>
 
@@ -48,7 +47,7 @@
     <section class="regalos" id="regalos">
         <h1>Regalos</h1>
         <p>¡Gracias por formar parte de nuestro inicio como familia!</p>
-        <img src="assets/Amazon.webp" alt="" class="amazon">
+        <a href="https://www.amazon.com.mx/"><img src="assets/Amazon.webp" alt="" class="amazon"></a>
         <p>Tendremos una caja para sobres el día del evento por si deseas hacernos un regalo en efectivo.</p>
 
     </section>
@@ -58,12 +57,6 @@
     </section>
 
     <script>
-        /*Hamburger Menu*/
-    const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector('.menu');
-    hamburger.addEventListener('click', () => {
-        menu.classList.toggle('active');
-    });
         /*Scroll Hover Top Page*/
     const header = document.querySelector('.header');
     window.addEventListener('scroll', () => {
